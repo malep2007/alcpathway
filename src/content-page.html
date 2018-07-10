@@ -184,7 +184,7 @@
             type: Object,
             value: {}
           },
-          ahs: Array,
+          alc: Array,
           asResource: {
             type: Boolean,
             notify: true,
@@ -236,8 +236,8 @@
         if(mdlMatch){
           this.pathIndex = mdlMatch[0];
           this.moduleIndex = parseInt(this.pathIndex) + 1;
-          if(this.ahs){
-            this.content = this.ahs[ this.pathIndex ];
+          if(this.alc){
+            this.content = this.alc[ this.pathIndex ];
             this.contentLinks = [];
             this.contentLinks = this._getContentLinks();
           }
@@ -248,8 +248,8 @@
           const pathParts = resMatch[0].split("/");
           this.pathIndex = pathParts[0];
           this.moduleIndex = parseInt(this.pathIndex) + 1;
-          if(this.ahs){
-            this.content = this.ahs[ this.pathIndex ];
+          if(this.alc){
+            this.content = this.alc[ this.pathIndex ];
             this.asResource = true;
             this.resource = this.content.content.find(itm => itm.name === pathParts[1]);
           }
