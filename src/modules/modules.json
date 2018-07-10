@@ -1,0 +1,177 @@
+[
+  
+  {
+    "name": "Git and Version Control",
+    "overview": "Version control is a way of keeping track of changes to files over time so that you can recall previous versions when needed and also easily work with other teammates collaboratively",
+    "objectives": [
+      "Basic commands that can be executed via the terminal",
+      "What version control is and why it is important",
+      "Know examples of version control systems",
+      "How to use common git commands"
+      ],
+    "content":[
+      {
+        "name": "command-line",
+        "title": "Command Line Basics",
+        "link": "content/2/command-line"
+      },
+      {
+        "name": "version-control",
+        "title": "Version control with Git",
+        "link": "content/2/version-control"
+      }]
+  },
+  {
+    "name": "Agile Methodology",
+    "overview": "At Andela, we know that effective communication is required for use to succeed so we ask questions, request and give feedback, write professionally, speak to be understood and seek  to understand the message being passed. We act, react and communicate in a manner that demonstrates respect for our co workers, partners, ecosystem. We show an acceptance of the organization's mission and hold ourselves to the highest ethical standard",
+    "objectives": [
+      "Principles of effective communication",
+      "Importance and benefits of seeking feedback",
+      "Approaches for constructively and effectively receiving and giving feedback",
+      "Vital rules of business etiquette",
+      "What ethics is",
+      "Project management tools"
+    ],
+    "content":[
+      
+      {
+        "name": "project-management",
+        "title": "Project Management Tools",
+        "link": "https://www.pivotaltracker.com/help/articles/quick_start/"
+      }
+     ]
+  },
+  {
+    "name": "Object Oriented Programming",
+    "overview":
+      "Object oriented programming is a paradigm and a way of thinking that helps programmers effectively model real-life scenarios. In this module, we will cover general OOP concepts and OOP in Python / JavaScript.",
+    "objectives": [
+      "Object oriented programming concepts, classes and objects.",
+      "Implement object oriented programming concepts in Python / JavaScript."
+    ],
+    "content": [
+      {
+        "coverage": "1",
+        "name": "oop",
+        "title": "What is Object Oriented Programming",
+        "link": "content/4/oop"
+      },
+      {
+        "lang": "py",
+        "coverage": "1, 2",
+        "name": "py-oop--py",
+        "title": "Object Oriented Programming in Python",
+        "link": "content/4/py-oop--py"
+      },
+      {
+        "lang": "js",
+        "coverage": "1, 2",
+        "name": "js-oop--js",
+        "title": "Introducing JavaScript Objects",
+        "link": "content/4/js-oop--js"
+      }
+    ]
+  },
+  
+  {
+    "name": "Test Driven Development",
+    "overview": "TDD is a software development process in which one writes tests before writing production code thus giving one an opportunity to think through a systems requirements.",
+    "objectives": [
+      "What tests are",
+      "How to write tests",
+      "How TDD beneficial is to programming",
+      "How to debug"
+      ],
+    "content":[
+      {
+      "name": "tdd",
+      "title": "Introduction to TDD",
+      "link": "content/6/tdd"
+    },
+    {
+      "lang":"py",
+      "name": "py--tdd--py",
+      "title": "TDD in Python",
+      "link": "content/6/py--tdd--py"
+    },
+    {
+      "lang":"js",
+      "name": "js--tdd--js",
+      "title": "TDD in Javascript",
+      "link": "content/6/js--tdd--js"
+    },
+    {
+      "lang":"js",
+      "name": "js--debugging--js",
+      "title": "Debugging in Javascript",
+      "link": "content/6/js--debugging--js"
+    },
+    {
+      "lang":"py",
+      "name": "py--debugging--py",
+      "title": "Debugging in Python",
+      "link": "content/6/py--debugging--py"
+    }
+    ]
+  },
+  
+  {
+    "name": "HTTP and Web Services",
+    "overview":
+      "This module will cover the fundamentals of web programming and technologies used in programming web pages.",
+    "objectives": [
+      "Basics of HTTP.",
+      "Use HTML and CSS to create web pages.",
+      "Use Javascript to create interactive web pages.",
+      "Basics of MVC."
+    ],
+    "content": [
+      {
+        "coverage": "1",
+        "name": "protocol-http",
+        "title": "HTTP: The Protocol Every Web Developer Must Know",
+        "link":
+          "https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177"
+      },
+      {
+        "coverage": "2",
+        "name": "htmlfive-tutorial",
+        "title": "HTML5 Tutorial",
+        "link": "https://www.w3schools.com/html/"
+      },
+      {
+        "coverage": "2",
+        "name": "css-tutorial",
+        "title": "CSS Tutorial",
+        "link": "https://www.w3schools.com/css/default.asp"
+      },
+      {
+        "coverage": "2",
+        "name": "html-css-course",
+        "title": "HTML / CSS Tutorial",
+        "link": "https://www.codecademy.com/learn/web"
+      },
+      {
+        "coverage": "3",
+        "name": "the-modern-javascript-tutorial--js",
+        "title": "The Modern JavaScript Tutorial",
+        "link": "https://javascript.info/"
+      },
+      {
+        "lang": "js",
+        "coverage": "3",
+        "name": "codecademy-js-course--js",
+        "title": "Codecademy JavaScript Course",
+        "link": "https://www.codecademy.com/learn/learn-javascript"
+      },
+      {
+        "coverage": "4",
+        "name": "mvc-explained-with-legos",
+        "title": "Model-View-Controller (MVC) Explained",
+        "link":
+          "https://realpython.com/blog/python/the-model-view-controller-mvc-paradigm-summarized-with-legos/"
+      }
+    ]
+  },
+
+]
