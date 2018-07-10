@@ -23,7 +23,7 @@
 <link rel="lazy-import" href="alc-view404.html">
 <link rel="lazy-import" href="content-page.html">
 
-<dom-module id="andela-homestudy">
+<dom-module id="andela-alcpathway">
   <template>
     <style include="shared-styles">
       :host {
@@ -164,7 +164,7 @@
             data="{{routeData}}"
             tail="{{subroute}}"></app-route>
 
-    <iron-localstorage name="ahs-app-storage" value="{{localStore}}" on-iron-localstorage-load="LocalStoreLoaded" on-iron-localstorage-load-empty="initializeLocalStore">
+    <iron-localstorage name="alc-app-storage" value="{{localStore}}" on-iron-localstorage-load="LocalStoreLoaded" on-iron-localstorage-load-empty="initializeLocalStore">
     </iron-localstorage>
     
     <app-drawer-layout force-narrow="">
@@ -174,7 +174,7 @@
         <iron-ajax url="src/modules/modules.json" last-response="{{ahsContent}}" auto=""></iron-ajax>
         <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" role="navigation">
           <a name="home" href="home">Welcome</a>
-          <iron-list items="[[ahsContent]]" as="item">
+          <iron-list items="[[alcContent]]" as="item">
             <template><a name="modules" href="modules/[[index]]">[[item.name]]</a></template>
           </iron-list>
         </iron-selector>
@@ -225,8 +225,8 @@
 
         <iron-pages id="pages" selected="[[page]]" attr-for-selected="name" fallback-selection="view404" role="main" >
           <home-page name="home"></home-page>
-          <modules-page name="modules" route="[[subroute]]" ahs="[[ahsContent]]" python$="{{pyChecked}}"></modules-page>
-          <content-page name="content" route="[[subroute]]" ahs="[[ahsContent]]" python$="{{pyChecked}}"></content-page>
+          <modules-page name="modules" route="[[subroute]]" ahs="[[alcContent]]" python$="{{pyChecked}}"></modules-page>
+          <content-page name="content" route="[[subroute]]" ahs="[[alcContent]]" python$="{{pyChecked}}"></content-page>
           <ahs-view404 name="view404"></ahs-view404>
         </iron-pages>
 
@@ -240,7 +240,7 @@
   <script src="../bower_components/web-animations-js/web-animations-next-lite.min.js"></script>
 
   <script>
-    class AndelaHomeStudy extends Polymer.Element {
+    class AndelaAlcPathway extends Polymer.Element {
 
       static get is() { return 'andela-homestudy'; }
 
@@ -383,6 +383,6 @@
         this.pageViewRecorded = true;
       }
     }
-    window.customElements.define(AndelaHomeStudy.is, AndelaHomeStudy);
+    window.customElements.define(AndelaAlcPathway.is, AndelaAlcPathway);
   </script>
 </dom-module>
