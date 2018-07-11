@@ -1,4 +1,4 @@
-# ALC Pathway
-Andela's ALCPathway Level-Up Curriculum
+# HomeStudy
+Andela's home study curriculum
 
-Go to http://curriculum.andela.co to view the ALC Level-Up Curriculum.
+Go to http://curriculum.andela.co to view the home study curriculum

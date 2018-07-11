@@ -2,8 +2,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
 
-    <title>Andela ALC Pathway</title>
-    <meta name="description" content="Andela ALC Pathway App">
+    <title>Andela Home Study</title>
+    <meta name="description" content="Andela Home Study App">
 
     <base href="./">
 
@@ -14,12 +14,12 @@
 
     <!-- Add to homescreen for Chrome on Android. Fallback for manifest.json -->
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Alc Pathway">
+    <meta name="application-name" content="Home Study">
 
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Alc Pathway">
+    <meta name="apple-mobile-web-app-title" content="Home Study">
 
     <!-- Homescreen icons -->
     <link rel="apple-touch-icon" href="images/manifest/icon-48x48.png">
@@ -38,18 +38,18 @@
       const baseUrl = document.querySelector('base').href;
 
       // Load and register pre-caching Service Worker
-      if ('serviceWorker' in navigator) {
+      /* if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
           if('https:' === window.location.protocol){
             navigator.serviceWorker.register(baseUrl + 'service-worker.js');
           }
         });
-      }
+      }*/
     </script>
     <script src="bower_components/webcomponentsjs/webcomponents-loader.js"></script>
 
-    <!-- Load ALC shell -->
-    <link rel="import" href="src/andela-alcpathway.html">
+    <!-- Load AHS shell -->
+    <link rel="import" href="src/andela-homestudy.html">
     <style>
       @import url(https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en);
       body {
@@ -89,7 +89,7 @@
       Please enable JavaScript to view this website.
     </noscript>
 
-    <andela-alcpathway></andela-alcpathway>
+    <andela-homestudy></andela-homestudy>
     
   
 

@@ -48,6 +48,7 @@
         display: none;
         visibility: hidden;
       }
+
     </style>
     <style include="md-styles"></style>
 
@@ -105,7 +106,9 @@
                       <template is="dom-repeat" items="{{contentLinks}}" as="res">
                           <li>
                             <!-- <a lang$="[[res.lang]]" name="resource" href="modules/[[pathIndex]]/[[res.name]]">[[res.title]]</a> -->
-                            <a lang$="[[res.lang]]" name="resource" href="[[res.link]]" on-click="_resourceLinkClicked" target="_blank">[[res.title]]</a>
+                            <a lang$="[[res.lang]]" name="resource" href="[[res.link]]  "on-click="_resourceLinkClicked" target="_blank">
+                              [[res.title]]
+                            </a>
                           </li>
                       </template>
                     </ul>
@@ -122,7 +125,8 @@
           <div class="mdl-cell mdl-cell--12-col">
             <h1 class="title-root">
               <paper-menu-button>
-                <paper-fab slot="dropdown-trigger" label="{{moduleIndex}}" alt="menu"></paper-fab>
+                <paper-fab slot="dropdown-trigger" label="{{moduleIndex}}" alt="menu">
+                </paper-fab>
                 <paper-listbox slot="dropdown-content">
                   <template is="dom-repeat" items="{{contentLinks}}" as="res">
                     <paper-item>
@@ -131,7 +135,7 @@
                   </template>
                 </paper-listbox>
               </paper-menu-button>
-              <a href="modules/[[pathIndex]]">{{content.name}}</a>
+              <a href="[[rootPath]]modules/[[pathIndex]]">{{content.name}}</a>
             </h1>
             <h3 class="title-branch">
               <iron-icon icon="my-icons:subdirectory-arrow-right"></iron-icon>
@@ -184,7 +188,7 @@
             type: Object,
             value: {}
           },
-          alc: Array,
+          ahs: Array,
           asResource: {
             type: Boolean,
             notify: true,
@@ -236,8 +240,8 @@
         if(mdlMatch){
           this.pathIndex = mdlMatch[0];
           this.moduleIndex = parseInt(this.pathIndex) + 1;
-          if(this.alc){
-            this.content = this.alc[ this.pathIndex ];
+          if(this.ahs){
+            this.content = this.ahs[ this.pathIndex ];
             this.contentLinks = [];
             this.contentLinks = this._getContentLinks();
           }
@@ -248,8 +252,8 @@
           const pathParts = resMatch[0].split("/");
           this.pathIndex = pathParts[0];
           this.moduleIndex = parseInt(this.pathIndex) + 1;
-          if(this.alc){
-            this.content = this.alc[ this.pathIndex ];
+          if(this.ahs){
+            this.content = this.ahs[ this.pathIndex ];
             this.asResource = true;
             this.resource = this.content.content.find(itm => itm.name === pathParts[1]);
           }
@@ -283,8 +287,10 @@
 
       }
 
-      _renderdone() {
-        
+      _renderDone() {
+        console.log('renderDone', this.moduleIndex);
+        let outLinks = document.querySelectorAll('a [href=http*]');
+        console.log(outLinks);
       }
 
     }
