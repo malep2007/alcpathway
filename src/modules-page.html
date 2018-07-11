@@ -248,8 +248,8 @@
           const pathParts = resMatch[0].split("/");
           this.pathIndex = pathParts[0];
           this.moduleIndex = parseInt(this.pathIndex) + 1;
-          if(this.ahs){
-            this.content = this.ahs[ this.pathIndex ];
+          if(this.alc){
+            this.content = this.alc[ this.pathIndex ];
             this.asResource = true;
             this.resource = this.content.content.find(itm => itm.name === pathParts[1]);
           }

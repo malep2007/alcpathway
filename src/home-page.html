@@ -10,7 +10,7 @@
       :host {
         display: block;
         padding: 10px;
-        background: url("../images/orange-glyph.png") 50% bottom no-repeat;
+        /*background: url("../images/orange-glyph.png") 50% bottom no-repeat;*/
       }
 
       table.modules-tbl td a{
@@ -34,60 +34,59 @@
     <div class="page-wide">
       <div class="mdl-grid">
         <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
-          <h1>Overview</h1>
+          <h1>Curriculum Overview</h1>
           <p class="color-white">The ALC curriculum from Andela is here to help you level-up on important Computer Science and Programming concepts.</p>
           <p class="color-white">The curriculum includes everything that’s required to fully grasp the crucial concepts of professional Software Development, and gain a thorough understanding of Computer Science best practices through Python and JavaScript. 
           By covering this Level-Up Curriculum, you will be comfortable with important Sofware Programming concepts -- empowering you to engage with a vibrant community of like-minded learners with all levels of experience.</p>
+          
+          <div class="note">
+              <b>Important Note</b>
+              <ul>
+                <li>Are you applying to our East African office in Nairobi or Kampala? If yes, ensure to click the <iron-icon icon="my-icons:py"></iron-icon> icon on the top right corner to follow the <b>Python track.</b></li>
+                <li>Are you applying to our West African office in Lagos? ensure to click the <iron-icon icon="my-icons:js"></iron-icon> icon on the top right corner to follow the <b>JavaScript track</b></li>
+              </ul>
+          </div>
           <p>
             <span class="call-to-action">
               Want to be a world class software developer ? <br />
               <a href="http://apply.andela.com/" target="_blank" on-click="_tappedApply">Apply to the Andela Fellowship.</a>
             </span>
-          </p> 
+          </p>
         </div>
-        <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
 
+        <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
           
-          <!-- <span id="join" class="call-to-action">
-            Begin Your Journey
-          </span> -->
-          
-          <h1>Structure</h1>
+          <h1>Curriculum Structure</h1>
           <table class="modules-tbl full-width mdl-data-table mdl-js-data-table mdl-shadow--3dp">
             <thead>
               <tr>
-                <th class="mdl-data-table__cell--non-numeric">Module</th>
-                <th class="mdl-data-table__cell--non-numeric">Python</th>
-                <th class="mdl-data-table__cell--non-numeric">JavaScript</th>
+                <th class="mdl-data-table__cell--non-numeric"><h3>Module</h3></th>
+                <th class="mdl-data-table__cell--non-numeric"><h3>Has Python Content</h3></th>
+                <th class="mdl-data-table__cell--non-numeric"><h3>Has JavaScript Content</h3></th>
               </tr>
             </thead>
             <tbody>
               
               <tr>
-                <td class="mdl-data-table__cell--non-numeric" colspan="2"><a href="modules/0">Git and Version Control</a></td>
+                <td class="mdl-data-table__cell--non-numeric" colspan="3"><a href="[[rootPath]]modules/0">Git &amp; Version Control</a></td>
               </tr>
-               
               <tr>
-                <td class="mdl-data-table__cell--non-numeric"><a href="modules/4">Object Oriented Programming</a></td>
+                <td class="mdl-data-table__cell--non-numeric"><a href="[[rootPath]]modules/1">Object Oriented Programming</a></td>
+                <td class="mdl-data-table__cell--non-numeric"><iron-icon icon="my-icons:check-circle"></iron-icon></td>
                 <td class="mdl-data-table__cell--non-numeric"><paper-icon-button icon="my-icons:check-circle"></paper-icon-button></td>
-                <td class="mdl-data-table__cell--non-numeric"><paper-icon-button icon="my-icons:check-circle"></paper-icon-button></td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric"><a href="[[rootPath]]modules/2">Test Driven Development</a></td>
+                <td class="mdl-data-table__cell--non-numeric"><iron-icon icon="my-icons:check-circle"></iron-icon></td>
+                <td class="mdl-data-table__cell--non-numeric"><iron-icon icon="my-icons:check-circle"></iron-icon></td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric" colspan="3"><a href="[[rootPath]]modules/0">HTTP and Web Services</a></td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric" colspan="3"><a href="[[rootPath]]modules/4">Agile Methodology</a></td>
               </tr>
               
-              <tr>
-                <td class="mdl-data-table__cell--non-numeric"><a href="modules/6">Test Driven Development</a></td>
-                <td class="mdl-data-table__cell--non-numeric"><paper-icon-button icon="my-icons:check-circle"></paper-icon-button></td>
-                <td class="mdl-data-table__cell--non-numeric"><paper-icon-button icon="my-icons:check-circle"></paper-icon-button></td>
-              </tr>
-              
-              <tr>
-                <td class="mdl-data-table__cell--non-numeric"><a href="modules/8">HTTP and Web Services</a></td>
-                <td class="mdl-data-table__cell--non-numeric"><paper-icon-button icon="my-icons:check-circle"></paper-icon-button></td>
-                <td class="mdl-data-table__cell--non-numeric"><paper-icon-button icon="my-icons:check-circle"></paper-icon-button></td>
-              </tr>
-              <tr>
-                <td class="mdl-data-table__cell--non-numeric" colspan="2"><a href="modules/9">Agile Methodology</a></td>
-                <td class="mdl-data-table__cell--non-numeric"><paper-icon-button icon="my-icons:check-circle"></paper-icon-button></td>
-              </tr>
             </tbody>
           </table>
 
@@ -105,7 +104,7 @@
       }
 
       _tappedAhsDownload(e) {
-        this._gaEvt('Download AHS-1.x', 'click', 'UI Interaction');
+        this._gaEvt('Download ALC-1.x', 'click', 'UI Interaction');
       }
 
       _gaEvt(prop, action, label) {

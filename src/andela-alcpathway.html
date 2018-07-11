@@ -227,7 +227,7 @@
           <home-page name="home"></home-page>
           <modules-page name="modules" route="[[subroute]]" ahs="[[alcContent]]" python$="{{pyChecked}}"></modules-page>
           <content-page name="content" route="[[subroute]]" ahs="[[alcContent]]" python$="{{pyChecked}}"></content-page>
-          <ahs-view404 name="view404"></ahs-view404>
+          <alc-view404 name="view404"></alc-view404>
         </iron-pages>
 
         <!-- <paper-icon-button id="main-slackr" icon="my-icons:slack"></paper-icon-button> -->
@@ -325,7 +325,7 @@
       }
 
       _showPage404() {
-        this.page = 'ahs-view404';
+        this.page = 'alc-view404';
       }
 
       _switchToPython() {
@@ -361,7 +361,7 @@
       }
       
       _tappedFeedbackLink(e) {
-        this._gaEvt('AHS Feedback', 'click', 'UI Interaction');
+        this._gaEvt('ALC Feedback', 'click', 'UI Interaction');
       }
 
       _tappedOpenAndelaSlack(e) {

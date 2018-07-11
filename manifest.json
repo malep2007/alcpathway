@@ -1,6 +1,6 @@
 {
-  "name": "Andela Home Study",
-  "short_name": "Home Study",
+  "name": "Andela ALC Pathway",
+  "short_name": "ALC Pathway",
   "start_url": "./?homescreen=1",
   "display": "standalone",
   "theme_color": "#3260DA",
