@@ -5,9 +5,9 @@
     "overview": "Version control is a way of keeping track of changes to files over time so that you can recall previous versions when needed and also easily work with other teammates collaboratively",
     "objectives": [
       "Understand basic terminal commands",
-      "Explain what version control is and why it’s important",
-      "Differentiate between different version control systems",
-      "Use common git commands e.g. git init, status, add, commit, push, pull"
+      "What version control is and why it is important",
+      "Know examples of version control systems",
+      "How to use common git commands"
       ],
     "content":[
       {
@@ -99,12 +99,12 @@
   {
     "name": "HTTP and Web Services",
     "overview":
-      "This module will cover the fundamentals of HTTP protocol and Web Services.",
+      "This module will cover the fundamentals of web programming and technologies used in programming web pages.",
     "objectives": [
-      "Explain what HTTP protocol means",
-      "Understand the different HTTP verbs(e.g. PUT, POST)",
-      "Understand the meaning different HTTP status codes",
-      "Understand and explain RESTful API design"
+      "Basics of HTTP.",
+      "Use HTML and CSS to create web pages.",
+      "Use Javascript to create interactive web pages.",
+      "Basics of MVC."
     ],
     "content": [
       
@@ -118,17 +118,20 @@
 
   {
     "name": "Agile Methodology",
-    "overview": "At Andela, we believe in Agile Software Development practices and as such we try to live by the Agile principles.",
+    "overview": "At Andela, we know that effective communication is required for use to succeed so we ask questions, request and give feedback, write professionally, speak to be understood and seek  to understand the message being passed. We act, react and communicate in a manner that demonstrates respect for our co workers, partners, ecosystem. We show an acceptance of the organization's mission and hold ourselves to the highest ethical standard",
     "objectives": [
-      "Explain the meaning of agile software development",
-      "Be familiar with tools used for agile software development",
-      "Understand how to use Pivotal Tracker"
+      "Principles of effective communication",
+      "Importance and benefits of seeking feedback",
+      "Approaches for constructively and effectively receiving and giving feedback",
+      "Vital rules of business etiquette",
+      "What ethics is",
+      "Project management tools"
     ],
     "content":[
       
       {
         "name": "project-management",
-        "title": "Pivotal Tracker",
+        "title": "Project Management Tools",
         "link": "https://www.pivotaltracker.com/help/articles/quick_start/"
       }
       
