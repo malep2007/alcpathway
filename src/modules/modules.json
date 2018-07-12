@@ -125,11 +125,7 @@
       "Understand how to use Pivotal Tracker"
     ],
     "content":[
-      {
-        "name": "agile-methodology",
-        "title": "Introduction to Agile Methodology",
-        "link": "https://www.codeproject.com/Articles/704600/An-introduction-to-Agile-Methodology/"
-      },
+      
       {
         "name": "project-management",
         "title": "Pivotal Tracker",
