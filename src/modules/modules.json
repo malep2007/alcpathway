@@ -101,10 +101,10 @@
     "overview":
       "This module will cover the fundamentals of HTTP protocol and Web Services.",
     "objectives": [
-      "Explain what HTTP protocol means.",
-      "Understand the different HTTP verbs(e.g. PUT, POST).",
-      "Understand the meaning different HTTP status codes.",
-      "Understand and explain RESTful API design."
+      "Explain what HTTP protocol means",
+      "Understand the different HTTP verbs(e.g. PUT, POST)",
+      "Understand the meaning different HTTP status codes",
+      "Understand and explain RESTful API design"
     ],
     "content": [
       
@@ -118,7 +118,7 @@
 
   {
     "name": "Agile Methodology",
-    "overview": "At Andela, we believe in Agile Software Development Methodology, and as such we try to live its principles.",
+    "overview": "At Andela, we believe in Agile Software Development Methodology, and as such we try to live by its principles.",
     "objectives": [
       "Explain the meaning of agile software development",
       "Be familiar with tools used for agile software development",
@@ -130,6 +130,11 @@
         "name": "project-management",
         "title": "Pivotal Tracker",
         "link": "https://www.pivotaltracker.com/help/articles/quick_start/"
+      },
+      {
+        "name": "agile-methodology",
+        "title": "Introduction to Agile Methodology",
+        "link": "https://www.codeproject.com/Articles/704600/An-introduction-to-Agile-Methodology/"
       }
       
      ]
