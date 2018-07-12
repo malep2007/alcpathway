@@ -75,12 +75,12 @@
             </h1>
 
             <template is="dom-if" if="{{content.overview}}">
-              <h3>Module Overview</h3>
+              <h3>Overview</h3>
               <p>{{content.overview}}</p>
             </template>
 
             <template is="dom-if" if="{{content.objectives}}">
-              <h3>Learning Outcomes</h3>
+              <h3>Learning Objectives</h3>
               <p>By the end of this module, you should be able to understand:</p>
               <ol>
                 <template is="dom-repeat" items={{content.objectives}}>
@@ -95,7 +95,7 @@
               <thead>
                 <tr>
                   <th class="mdl-data-table__cell--non-numeric">
-                    <h3>Study Resources</h3>
+                    <h3>Study Resource</h3>
                   </th>
                 </tr>
               </thead>
