@@ -138,5 +138,21 @@
       }
       
      ]
+  },
+  {
+    "name": "Just me testing my stuff",
+    "overview": "Nope, nothing here",
+    "objectives":[
+      "Jokes",
+      "more jokes",
+      "seriously, more jokes"
+    ],
+    "content":[
+      {
+        "name": "nothing",
+        "title": "Story about nothing",
+        "link": "content/4/some-stuff"
+      }
+    ]
   }
 ]
